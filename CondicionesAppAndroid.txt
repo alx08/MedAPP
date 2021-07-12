@@ -1,0 +1,6 @@
+En el registro de aportación se debe enviar la fecha de registro por debajo
+ - al cargar la imagen, se debe guardar los datos en la base
+ - El campo valor solo debe permitir numeros y punto
+ - Cargar foto de comprobante - verificar si está iniciado sesión
+
+

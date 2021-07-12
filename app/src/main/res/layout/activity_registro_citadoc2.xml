@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnAgregar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroPacCitaDoc">
+
+    <EditText
+        android:id="@+id/selFecha"
+        android:layout_width="390dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Detalles de consulta:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Verifique la fecha:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/selFecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUbicacion" />
+
+    <EditText
+        android:id="@+id/txtUbicacion"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Ubicación"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black_overlay"
+        android:translationX="5sp"
+        android:translationY="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescripcion" />
+
+    <EditText
+        android:id="@+id/txtTitulo"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:ems="10"
+        android:hint="Motivo de consulta"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black_overlay"
+        android:translationX="5sp"
+        android:translationY="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Descripción"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black_overlay"
+        android:translationX="5sp"
+        android:translationY="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtUbicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnSiguiente5"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Regresar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#C2185B"
+        android:textSize="25sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistroDoc" />
+
+    <Button
+        android:id="@+id/btnRegistroDoc"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Siguiente"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#CE0048FF"
+        android:textSize="25sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnSiguiente5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="192dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Antecedentes:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selFecha" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="390dp"
+        android:layout_height="173dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

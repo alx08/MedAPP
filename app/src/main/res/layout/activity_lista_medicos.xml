@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaMedicosActivity"
+    >
+
+    <Button
+        android:id="@+id/btnSiguiente2"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Regresar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#C2185B"
+        android:textSize="25sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView54" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView54"
+        android:layout_width="413dp"
+        android:layout_height="509dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSiguiente2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/carDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/boton"
+                    app:cardElevation="10sp">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/doctor"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5"
+                        android:translationX="49sp" />
+
+                    <TextView
+                        android:id="@+id/textView43"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NombreDoctor"
+                        android:translationX="110sp"
+                        android:translationY="45sp" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="precio"
+                        android:translationX="340sp"
+                        android:translationY="45sp" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:translationX="380sp"
+                        android:translationY="45sp" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Elija el Doctor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Seleccionar el doctor de su preferencia: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView69" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

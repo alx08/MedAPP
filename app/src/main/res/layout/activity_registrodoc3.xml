@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrodoc3Activity">
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Registrar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#303F9F"
+        android:textSize="25sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Sobre ti"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/black_overlay"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="408dp"
+        android:layout_height="308dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Hablemos de ti..."
+        android:inputType="textMultiLine"
+        android:paddingStart="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black_overlay"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Redes Sociales"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/black_overlay"
+        android:textSize="25sp"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine"
+        app:srcCompat="@drawable/fb"
+        tools:srcCompat="@drawable/fb___copy" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/whatsapp_logo_1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/ins" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

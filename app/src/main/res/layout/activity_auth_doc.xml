@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AuthDoc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivityDoc">
+
+    <Button
+        android:id="@+id/btnSiguiente11"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Regresar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#C2185B"
+        android:textSize="20sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.97" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:lineSpacingExtra="8sp"
+        android:text="Iniciar Sesión"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/black_overlay"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="79sp"
+        android:layout_height="33sp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Doctor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Doctor" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="363sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="296dp"
+        android:layout_marginBottom="145dp"
+        android:background="@drawable/round"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="9sp"
+        app:cardElevation="4sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSiguiente11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/TxtPassword"
+            android:layout_width="354sp"
+            android:layout_height="46sp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black_overlay"
+            android:translationX="5dp"
+            android:translationY="63dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.528" />
+
+        <EditText
+            android:id="@+id/TxtEmail"
+            android:layout_width="354sp"
+            android:layout_height="46sp"
+            android:ems="10"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black_overlay"
+            android:translationX="5dp"
+            android:translationY="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.875"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.453" />
+
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="300sp"
+            android:layout_height="40sp"
+            android:background="@drawable/boton_interaccion"
+            android:fontFamily="sans-serif-light"
+            android:text="Iniciar Sesión"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#CE0048FF"
+            android:textSize="20sp"
+            android:translationX="32dp"
+            android:translationY="120dp"
+            android:typeface="sans"
+            app:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="¿Aún no te has registrado?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="@color/black_overlay"
+            android:textSize="20sp"
+            android:translationX="10sp"
+            android:translationY="250sp"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton"
+            android:fontFamily="sans-serif-light"
+            android:text="Regístrate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+            android:textColor="#F61549"
+            android:textSize="16sp"
+            android:translationX="245sp"
+            android:translationY="240sp"
+            android:typeface="sans"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:background="@drawable/common_google_signin_btn_icon_light"
+            android:translationX="130sp"
+            android:translationY="175sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="140sp"
+        android:layout_height="140sp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:layout_constraintVertical_bias="0.537"
+        app:srcCompat="@drawable/doctor"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

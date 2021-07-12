@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "362309666220",
+    "project_id": "docapp-e4742",
+    "storage_bucket": "docapp-e4742.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362309666220:android:fca6904ae27adea18d6609",
+        "android_client_info": {
+          "package_name": "com.example.medapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362309666220-6vn0tt5pf6ec6sh3h55b8g3bsilc11tj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWifIBWsIDUq3lsB7P2sULtAJz4kRmrY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362309666220-6vn0tt5pf6ec6sh3h55b8g3bsilc11tj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362309666220:android:c82f3f10230186248d6609",
+        "android_client_info": {
+          "package_name": "doc.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362309666220-6vn0tt5pf6ec6sh3h55b8g3bsilc11tj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWifIBWsIDUq3lsB7P2sULtAJz4kRmrY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362309666220-6vn0tt5pf6ec6sh3h55b8g3bsilc11tj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".venMainPrincipalPacActivity">
+
+    <Button
+        android:id="@+id/btnSiguiente4"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Cerrar Sesión"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#C2185B"
+        android:textSize="25sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnPersonalizar3"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Personalizar Perfil"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:typeface="sans"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Bienvenido"
+        android:textColor="@color/black_overlay"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="nombrePaciente"
+        android:textColor="#00BCD4"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="358dp"
+        android:layout_height="389dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="6sp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        app:layout_constraintVertical_bias="0.595">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/round"
+            android:text="Calendario"
+            android:textColor="#303F9F"
+            android:translationX="20sp"
+            android:translationY="140sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/round"
+            android:text="Administrar Citas"
+            android:textColor="#C21889"
+            android:translationX="230sp"
+            android:translationY="20sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/round"
+            android:text="Médicos de Confianza"
+            android:textColor="#1892C2"
+            android:translationX="230sp"
+            android:translationY="140sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btnRealizarCita"
+            android:layout_width="100sp"
+            android:layout_height="97dp"
+            android:background="@drawable/round"
+            android:text="Realizar una Cita"
+            android:textColor="#B71848C2"
+            android:translationX="20sp"
+            android:translationY="20sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/round"
+            android:text="Farmacias Cercanas"
+            android:textColor="#18C27E"
+            android:translationX="20sp"
+            android:translationY="260sp"
+            app:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:background="@drawable/round"
+            android:text="Pagos Pendientes"
+            android:textColor="#7B1FA2"
+            android:translationX="230sp"
+            android:translationY="260sp"
+            app:backgroundTint="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="358dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="42dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52">
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Especialidad"
+            android:translationX="10sp"
+            android:translationY="8sp" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NombreMedico"
+            android:translationX="10sp"
+            android:translationY="27sp" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FechaConsulta"
+            android:translationX="10sp"
+            android:translationY="45sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:text="Ingresar"
+            android:translationX="250sp"
+            android:translationY="21sp" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HoraConsulta"
+            android:translationX="10sp"
+            android:translationY="63sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginRight="295dp"
+        android:text="Próxima cita"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
