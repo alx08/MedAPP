@@ -104,6 +104,7 @@ class AuthActivityDoc : AppCompatActivity() {
         }
     }
 
+    //Mostrar alerta de error
     fun ShowAlert(){
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
