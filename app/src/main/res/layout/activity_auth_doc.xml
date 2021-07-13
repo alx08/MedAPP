@@ -5,13 +5,15 @@
     android:id="@+id/AuthDoc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#BCFFFFFF"
     tools:context=".AuthActivityDoc">
+
 
     <Button
         android:id="@+id/btnSiguiente11"
-        android:layout_width="300sp"
-        android:layout_height="40sp"
-        android:layout_marginBottom="45dp"
+        android:layout_width="350sp"
+        android:layout_height="45sp"
+        android:layout_marginBottom="36dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Regresar"
@@ -22,9 +24,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView33"
@@ -51,10 +51,11 @@
         android:layout_width="79sp"
         android:layout_height="33sp"
         android:layout_marginTop="48dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:fontFamily="sans-serif-light"
         android:text="Doctor"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/black_overlay"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,22 +66,23 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="363sp"
-        android:layout_height="300sp"
-        android:layout_marginTop="296dp"
-        android:layout_marginBottom="145dp"
+        android:layout_width="350sp"
+        android:layout_height="356sp"
+        android:layout_marginTop="230sp"
         android:background="@drawable/round"
         app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="9sp"
+        app:cardCornerRadius="30sp"
         app:cardElevation="4sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSiguiente11"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538">
 
         <EditText
             android:id="@+id/TxtPassword"
-            android:layout_width="354sp"
+            android:layout_width="330sp"
             android:layout_height="46sp"
             android:ems="10"
             android:hint="Contraseña"
@@ -88,8 +90,8 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textColor="@color/black_overlay"
-            android:translationX="5dp"
-            android:translationY="63dp"
+            android:translationX="10sp"
+            android:translationY="80sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.871"
@@ -99,7 +101,7 @@
 
         <EditText
             android:id="@+id/TxtEmail"
-            android:layout_width="354sp"
+            android:layout_width="330sp"
             android:layout_height="46sp"
             android:ems="10"
             android:hint="Correo electrónico"
@@ -107,8 +109,8 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textColor="@color/black_overlay"
-            android:translationX="5dp"
-            android:translationY="10dp"
+            android:translationX="10sp"
+            android:translationY="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.875"
@@ -119,15 +121,15 @@
         <Button
             android:id="@+id/btnIniciarSesion"
             android:layout_width="300sp"
-            android:layout_height="40sp"
+            android:layout_height="45sp"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="Iniciar Sesión"
             android:textAppearance="@style/TextAppearance.AppCompat.Display4"
             android:textColor="#CE0048FF"
             android:textSize="20sp"
-            android:translationX="32dp"
-            android:translationY="120dp"
+            android:translationX="24sp"
+            android:translationY="140sp"
             android:typeface="sans"
             app:backgroundTint="@color/white" />
 
@@ -141,7 +143,7 @@
             android:textColor="@color/black_overlay"
             android:textSize="20sp"
             android:translationX="10sp"
-            android:translationY="250sp"
+            android:translationY="300sp"
             android:typeface="sans" />
 
         <Button
@@ -154,8 +156,8 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display4"
             android:textColor="#F61549"
             android:textSize="16sp"
-            android:translationX="245sp"
-            android:translationY="240sp"
+            android:translationX="242sp"
+            android:translationY="290sp"
             android:typeface="sans"
             app:backgroundTint="@color/white" />
 
@@ -164,8 +166,8 @@
             android:layout_width="wrap_content"
             android:layout_height="61dp"
             android:background="@drawable/common_google_signin_btn_icon_light"
-            android:translationX="130sp"
-            android:translationY="175sp" />
+            android:translationX="132sp"
+            android:translationY="220sp" />
 
     </androidx.cardview.widget.CardView>
 
@@ -175,8 +177,10 @@
         android:layout_height="140sp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
+        android:layout_marginTop="62dp"
         android:layout_marginEnd="116dp"
         android:layout_marginRight="116dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

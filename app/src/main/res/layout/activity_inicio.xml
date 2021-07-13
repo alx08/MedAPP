@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00C51162"
     tools:context=".InicioActivity">
 
     <androidx.cardview.widget.CardView
@@ -44,8 +45,8 @@
         android:id="@+id/cardView3"
         android:layout_width="359dp"
         android:layout_height="277dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="4dp"
+        app:cardCornerRadius="10sp"
+        app:cardElevation="4sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,8 +69,8 @@
 
         <ImageView
             android:id="@+id/imageDra"
-            android:layout_width="136dp"
-            android:layout_height="132dp"
+            android:layout_width="136sp"
+            android:layout_height="132sp"
             android:translationX="20sp"
             android:translationY="40sp"
             app:srcCompat="@drawable/doctor__1_"
@@ -77,10 +78,10 @@
 
         <ImageView
             android:id="@+id/imageDoc"
-            android:layout_width="134dp"
-            android:layout_height="132dp"
-            android:translationX="200sp"
-            android:translationY="40sp"
+            android:layout_width="134sp"
+            android:layout_height="132sp"
+            android:translationX="200dp"
+            android:translationY="40dp"
             app:srcCompat="@drawable/doctor"
             tools:ignore="VectorDrawableCompat" />
     </androidx.cardview.widget.CardView>

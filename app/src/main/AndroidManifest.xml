@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".SplashScreen"/>
         <activity android:name=".ProximasCitasMed" />
         <activity android:name=".RegistroPacCita3" />
         <activity android:name=".RegistroPacCitaDoc" />
@@ -25,7 +25,6 @@
         <activity android:name=".Registrodoc3Activity" />
         <activity android:name=".MainActivityVenPrincipalDoc"  />
             <!-- android:theme="@style/SplashTheme"-->
-
         <activity android:name=".AuthActivityPac" />
         <activity android:name=".RegistroPacActivity1" />
         <activity android:name=".Registrodoc2Activity" />

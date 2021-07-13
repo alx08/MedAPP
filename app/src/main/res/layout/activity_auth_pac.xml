@@ -39,7 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Médico" />
+        tools:text="Médico"
+        tools:ignore="UnknownIdInLayout" />
 
     <Button
         android:id="@+id/btnSiguiente10"
