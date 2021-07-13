@@ -85,7 +85,8 @@
         app:layout_constraintEnd_toStartOf="@+id/textView48"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+        app:layout_constraintTop_toBottomOf="@+id/textView46"
+        tools:ignore="UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/textView48"
@@ -104,7 +105,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView47"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.849" />
+        app:layout_constraintVertical_bias="0.849"
+        tools:ignore="UnknownIdInLayout" />
 
     <Button
         android:id="@+id/btnSiguiente8"
@@ -152,7 +154,8 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSiguiente9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView49">
+        app:layout_constraintTop_toBottomOf="@+id/textView49"
+        tools:ignore="UnknownIdInLayout">
 
         <RadioButton
             android:id="@+id/radioButton"

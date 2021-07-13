@@ -46,7 +46,7 @@
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="408dp"
+        android:layout_width="360sp"
         android:layout_height="308dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/round"
@@ -59,7 +59,7 @@
         android:textColor="@color/black_overlay"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -75,7 +75,7 @@
         android:textSize="25sp"
         android:typeface="sans"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
