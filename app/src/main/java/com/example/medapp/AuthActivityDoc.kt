@@ -79,7 +79,7 @@ class AuthActivityDoc : AppCompatActivity() {
 
     }
 
-    //Integracion boton google
+    //Integracion boton google - activity
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
     if (requestCode == GOOGLE_SIGN_IN) {
@@ -104,6 +104,7 @@ class AuthActivityDoc : AppCompatActivity() {
         }
     }
 
+    //Mostrar alerta de error
     fun ShowAlert(){
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
