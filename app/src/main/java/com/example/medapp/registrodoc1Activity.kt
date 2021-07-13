@@ -59,9 +59,8 @@ class registrodoc1Activity : AppCompatActivity() {
 
 
         btnRegistroDoc?.setOnClickListener {
-            db.collection("usuariosmed").document(user.toString()).set(
+            db.collection("usuariosmed").document(txtCI?.text.toString()).set(
                 hashMapOf(
-                    "cedula" to txtCI?.text.toString(),
                     "nombres" to txtNombres?.text.toString(),
                     "apellido" to txtApellidos?.text.toString(),
                     "correo" to email.toString(),

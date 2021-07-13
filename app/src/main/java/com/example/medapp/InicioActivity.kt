@@ -38,7 +38,7 @@ class InicioActivity : AppCompatActivity() {
         val email: String? = prefs.getString("email", null)
         val provider: String? = prefs.getString("provider", null)
 
-        if (email != null && provider !=null ){
+        if (email != null && provider != null ){
             authlayout?.visibility = View.INVISIBLE
             showHome(email, ProviderType.valueOf(provider))
         }

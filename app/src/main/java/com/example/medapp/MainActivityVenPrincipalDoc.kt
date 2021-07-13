@@ -62,23 +62,19 @@ class MainActivityVenPrincipalDoc : AppCompatActivity() {
         val provider = bundle?.getString("provider")
         setup(email ?:"", provider ?: "")
 
+        /**Almacena UID**/
+        /*
         val prefs: SharedPreferences.Editor? = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
         prefs?.putString("email", email)
-        prefs?.putString("uid", user.toString())
-        prefs?.apply()
+        prefs?.putString("provider", user.toString())
+        prefs?.apply()*/
 
 
 
-
-
-        /*val pref = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
-        pref.putString("email", email)
-        pref.putString("provides", provider)
-        pref.apply()*/
-
-
-
-
+        val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
+        prefs.putString("email", email)
+        prefs.putString("provider", provider)
+        prefs.apply()
 
     }
 
@@ -87,13 +83,13 @@ class MainActivityVenPrincipalDoc : AppCompatActivity() {
     title = "Inicio"
 
         //Guardar valores de sesion
-        //txtNombreDoctor?.text = email
+        txtNombreDoctor?.text = email
         val provider = provider
     }
 
     private fun datosPersonales(uid: String){
 
-    db.collection("usuariosmed").document(uid).get().addOnSuccessListener {
+    db.collection("usuarios").document(uid).get().addOnSuccessListener {
         txtNombreDoctor?.setText(it.get("nombres") as String?)
     }
     }

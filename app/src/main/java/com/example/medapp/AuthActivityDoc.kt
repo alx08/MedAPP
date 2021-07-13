@@ -6,11 +6,13 @@ import com.google.firebase.auth.FirebaseAuth
 import android.os.Bundle
 import android.content.Intent
 import android.content.SharedPreferences
+import android.os.Build
 import android.text.Layout
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -31,6 +33,9 @@ class AuthActivityDoc : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth_doc)
         supportActionBar!!.hide()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
+        }
 
 
         setup()
