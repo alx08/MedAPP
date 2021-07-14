@@ -19,34 +19,39 @@
         app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.979" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="140sp"
-        android:layout_height="140sp"
-        android:layout_marginTop="150dp"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="222dp"
+        android:layout_height="198dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView7"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/candado" />
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/registro" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView7"
-        android:layout_width="360sp"
-        android:layout_height="380sp"
-        android:layout_marginBottom="210dp"
+        android:layout_width="350sp"
+        android:layout_height="330sp"
+        android:layout_marginBottom="130dp"
         app:cardCornerRadius="9sp"
         app:cardElevation="4sp"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9">
+        app:layout_constraintTop_toBottomOf="@+id/animationView">
 
         <TextView
             android:id="@+id/textView26"
@@ -54,13 +59,13 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:text="Ingresar correo electrónico"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:translationX="10sp"
-            android:translationY="20sp" />
+            android:translationY="10sp" />
 
         <EditText
             android:id="@+id/txtEmail"
-            android:layout_width="340sp"
+            android:layout_width="320sp"
             android:layout_height="46sp"
             android:ems="10"
             android:fontFamily="sans-serif-light"
@@ -69,8 +74,9 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textColor="@color/black_overlay"
+            android:textSize="16sp"
             android:translationX="10sp"
-            android:translationY="50sp" />
+            android:translationY="33sp" />
 
         <TextView
             android:id="@+id/textView32"
@@ -78,13 +84,13 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:text="Ingresar contraseña"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:translationX="10sp"
-            android:translationY="100sp" />
+            android:translationY="80sp" />
 
         <EditText
             android:id="@+id/txtPassword"
-            android:layout_width="340sp"
+            android:layout_width="320sp"
             android:layout_height="46sp"
             android:ems="10"
             android:fontFamily="sans-serif-light"
@@ -93,8 +99,9 @@
             android:paddingStart="8dp"
             android:paddingLeft="8dp"
             android:textColor="@color/black_overlay"
+            android:textSize="16sp"
             android:translationX="10sp"
-            android:translationY="135sp" />
+            android:translationY="103sp" />
 
         <Button
             android:id="@+id/btnGoogle"
@@ -102,19 +109,19 @@
             android:layout_height="61dp"
             android:background="@drawable/common_google_signin_btn_icon_light"
             android:translationX="135sp"
-            android:translationY="200sp" />
+            android:translationY="150sp" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
-            android:layout_width="330dp"
-            android:layout_height="106dp"
+            android:layout_width="321dp"
+            android:layout_height="104dp"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="15dp"
-            android:translationY="260sp"
+            android:translationY="205sp"
             app:layout_constraintBottom_toTopOf="@+id/btnSiguiente9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -131,7 +138,7 @@
                 android:fontFamily="sans-serif-light"
                 android:text="Médico"
                 android:textColor="@color/black_overlay"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:backgroundTint="@color/white" />
 
             <RadioButton
@@ -143,7 +150,7 @@
                 android:fontFamily="sans-serif-light"
                 android:text="Paciente"
                 android:textColor="@color/black_overlay"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:backgroundTint="@color/white" />
 
         </RadioGroup>

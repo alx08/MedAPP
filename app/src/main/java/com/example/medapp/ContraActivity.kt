@@ -30,7 +30,8 @@ class ContraActivity : AppCompatActivity() {
             window.statusBarColor = ContextCompat.getColor(this, R.color.registrocolor)
         }
         supportActionBar!!.hide() ///esconde la barra de accion
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+        window.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
         val iniciarGoo : Button = findViewById(R.id.btnGoogle)
         val correo : EditText = findViewById(R.id.txtEmail)
         val pass : EditText = findViewById(R.id.txtPassword)
