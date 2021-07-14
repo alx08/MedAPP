@@ -29,8 +29,7 @@
         <activity android:name=".RegistroPacActivity1" />
         <activity android:name=".Registrodoc2Activity" />
         <activity android:name=".registrodoc1Activity" />
-        <activity android:name=".AuthActivityDoc"/>
-        <activity android:name=".InicioActivity">
+        <activity android:name=".AuthActivityDoc">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.INSERT" />

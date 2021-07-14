@@ -5,7 +5,7 @@
     android:id="@+id/AuthDoc"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BCFFFFFF"
+    android:background="@color/white"
     tools:context=".AuthActivityDoc">
 
 
@@ -35,7 +35,7 @@
         android:text="Iniciar Sesión"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="@color/black_overlay"
+        android:textColor="#273b7a"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="sans"
@@ -45,24 +45,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="79sp"
-        android:layout_height="33sp"
-        android:layout_marginTop="48dp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Doctor"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="@color/black_overlay"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:text="Doctor" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -126,7 +108,7 @@
             android:fontFamily="sans-serif-light"
             android:text="Iniciar Sesión"
             android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-            android:textColor="#CE0048FF"
+            android:textColor="#273b7a"
             android:textSize="20sp"
             android:translationX="24sp"
             android:translationY="140sp"
@@ -186,7 +168,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView33"
         app:layout_constraintVertical_bias="0.537"
-        app:srcCompat="@drawable/doctor"
+        app:srcCompat="@drawable/login"
         tools:ignore="VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

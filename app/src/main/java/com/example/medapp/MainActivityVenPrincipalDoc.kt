@@ -52,7 +52,6 @@ class MainActivityVenPrincipalDoc : AppCompatActivity() {
             val prefs: SharedPreferences.Editor = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
             prefs.clear()
             prefs.apply()
-
             FirebaseAuth.getInstance().signOut()
             showHome()
         }
@@ -95,7 +94,7 @@ class MainActivityVenPrincipalDoc : AppCompatActivity() {
     }
 
     private fun showHome(){
-        val homeIntent = Intent(this, InicioActivity::class.java)
+        val homeIntent = Intent(this, AuthActivityDoc::class.java)
         startActivity(homeIntent)
     }
 

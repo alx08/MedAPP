@@ -34,7 +34,7 @@ class AuthActivityDoc : AppCompatActivity() {
         setContentView(R.layout.activity_auth_doc)
         supportActionBar!!.hide()
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
+            window.statusBarColor = ContextCompat.getColor(this, R.color.logincolor)
         }
 
 
