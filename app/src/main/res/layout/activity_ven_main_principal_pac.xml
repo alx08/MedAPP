@@ -26,7 +26,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombrePaciente" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNombrePaciente"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnPersonalizar3"
@@ -53,17 +54,17 @@
         android:id="@+id/textView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Bienvenido"
         android:textColor="@color/logincolor"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombrePaciente"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtNombrePaciente"
@@ -86,18 +87,16 @@
         android:layout_height="389sp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="72dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="64dp"
         app:cardCornerRadius="10sp"
         app:cardElevation="6sp"
         app:cardPreventCornerOverlap="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView38"
-        app:layout_constraintVertical_bias="0.595">
+        app:layout_constraintTop_toBottomOf="@+id/cardView5">
 
         <Button
             android:id="@+id/button4"
@@ -176,13 +175,13 @@
         android:id="@+id/cardView5"
         android:layout_width="320sp"
         android:layout_height="95sp"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginRight="37dp"
-        android:layout_marginBottom="42dp"
-        app:cardCornerRadius="10dp"
+        android:layout_marginStart="37sp"
+        android:layout_marginLeft="37sp"
+        android:layout_marginTop="13sp"
+        android:layout_marginEnd="37sp"
+        android:layout_marginRight="37sp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="10sp"
         app:cardElevation="6sp"
         app:layout_constraintBottom_toTopOf="@+id/cardView4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -233,17 +232,19 @@
 
     <TextView
         android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="92dp"
+        android:layout_height="21dp"
         android:layout_marginStart="37dp"
         android:layout_marginLeft="37dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="295dp"
         android:layout_marginRight="295dp"
         android:text="Próxima cita"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="191dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPersonalizar3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

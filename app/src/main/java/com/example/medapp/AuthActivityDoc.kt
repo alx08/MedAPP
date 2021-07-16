@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -145,11 +146,21 @@ class AuthActivityDoc : AppCompatActivity() {
     }
 
     private fun showHome(email: String, provider: ProviderType){
+        if(valorEspecialdiad() == "Medico"){
         val homeIntent = Intent(this, MainActivityVenPrincipalDoc::class.java).apply {
             putExtra("email",email)
             putExtra("provider",provider.name)
         }
-        startActivity(homeIntent)
+            startActivity(homeIntent)
+        }
+        else{
+            val homeIntent = Intent(this, venMainPrincipalPacActivity::class.java).apply {
+                putExtra("email",email)
+                putExtra("provider",provider.name)
+            }
+            startActivity(homeIntent)
+        }
+
     }
 
 
@@ -163,13 +174,29 @@ class AuthActivityDoc : AppCompatActivity() {
 
     private fun datosPersonales(uid: String){
         var tipo: String? = null
-        db.collection("usuarios").document(uid).get().addOnSuccessListener {
+        /*db.collection("usuarios").document(uid).get().addOnSuccessListener {
             tipo =  (it.get("tipo") as String?).toString()
 
             val prefType = applicationContext.getSharedPreferences("type", MODE_PRIVATE).edit()
             prefType.putString("tipo", tipo);  // Saving string
             prefType.apply(); // commit changes
 
+        }*/
+
+        val docRef = db.collection("usuarios").document(uid)
+        docRef.addSnapshotListener { snapshot, e ->
+            if (e != null) {
+                Log.w("tipo", "Listen failed.", e)
+                return@addSnapshotListener
+            }
+            if (snapshot != null && snapshot.exists()) {
+                tipo = snapshot.get("tipo") as String?
+                val prefType = applicationContext.getSharedPreferences("type", MODE_PRIVATE).edit()
+                prefType.putString("tipo", tipo);  // Saving string
+                prefType.apply(); // commit changes
+            } else {
+                tipo = Log.d("tipo", "Current data: null").toString()
+            }
         }
     }
 
