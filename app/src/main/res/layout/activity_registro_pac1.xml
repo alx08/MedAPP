@@ -8,25 +8,25 @@
 
     <Button
         android:id="@+id/btnRegistroDoc"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
+        android:layout_width="320sp"
+        android:layout_height="40dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Continuar"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#303F9F"
+        android:textColor="#FFFFFF"
         android:textSize="25sp"
-        app:backgroundTint="@color/white"
+        app:backgroundTint="@color/logincolor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98" />
+        app:layout_constraintVertical_bias="0.979" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress4"
-        android:layout_width="370dp"
+        android:layout_width="320sp"
         android:layout_height="45dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -38,6 +38,7 @@
         android:paddingStart="8dp"
         android:paddingLeft="8dp"
         android:textColor="@color/black_overlay"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +56,7 @@
         android:text="Correo Electrónico:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,15 +75,16 @@
         android:text="Nombres:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName9"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
 
     <EditText
         android:id="@+id/editTextNumber3"
-        android:layout_width="370dp"
+        android:layout_width="320sp"
         android:layout_height="45sp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -94,6 +96,7 @@
         android:paddingStart="8dp"
         android:paddingLeft="8dp"
         android:textColor="@color/black_overlay"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView40"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,24 +108,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="243dp"
         android:layout_marginRight="243dp"
         android:fontFamily="sans-serif-light"
         android:text="Número de Cédula:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/txtCI"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView6"
         app:layout_constraintVertical_bias="0.65" />
 
     <EditText
         android:id="@+id/editTextTextPersonName9"
-        android:layout_width="370dp"
+        android:layout_width="320sp"
         android:layout_height="45sp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -135,6 +138,7 @@
         android:paddingLeft="8dp"
         android:text=""
         android:textColor="@color/black_overlay"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView42"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,7 +146,7 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName10"
-        android:layout_width="370dp"
+        android:layout_width="320sp"
         android:layout_height="45sp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
@@ -154,6 +158,7 @@
         android:paddingLeft="8dp"
         android:text=""
         android:textColor="@color/black_overlay"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView39"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,15 +176,16 @@
         android:text="Apellidos:"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName10"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
-        android:layout_width="380dp"
+        android:layout_width="320sp"
         android:layout_height="154dp"
         app:cardCornerRadius="10sp"
         app:cardElevation="4sp"
@@ -194,14 +200,14 @@
             android:id="@+id/imageView2"
             android:layout_width="176dp"
             android:layout_height="match_parent"
-            android:translationX="215sp"
+            android:translationX="146sp"
             app:srcCompat="@drawable/kisspng_computer_icons_google_account_user_profile_iconfin_png_icons_download_profile_5ab0301e32cb90_1777380215214960942081"
             tools:srcCompat="@drawable/kisspng_computer_icons_google_account_user_profile_iconfin_png_icons_download_profile_5ab0301e32cb90_1777380215214960942081" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="144dp"
-            android:layout_height="49dp"
+            android:layout_height="45dp"
 
             android:background="@drawable/boton"
             android:fontFamily="sans-serif-light"
@@ -209,9 +215,9 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Display4"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:translationY="55sp"
+            android:translationY="53sp"
             android:typeface="sans"
-            app:backgroundTint="#CE0048FF" />
+            app:backgroundTint="@color/logincolor" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -225,10 +231,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <TextView
         android:id="@+id/textView18"
@@ -236,10 +242,10 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:lineSpacingExtra="8sp"
-        android:text="Registro Paciente"
+        android:text="Registro"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"

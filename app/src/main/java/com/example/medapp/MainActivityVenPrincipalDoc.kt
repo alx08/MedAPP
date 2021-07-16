@@ -24,9 +24,6 @@ class MainActivityVenPrincipalDoc : AppCompatActivity() {
     var txtNombreDoctor: TextView? = null
     private val db = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
-        //setTheme(R.style.AppTheme) pantalla de carga
-        //Thread.sleep(2000)
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_ven_principal)
         supportActionBar!!.hide() ///esconde la barra de accion
@@ -62,18 +59,20 @@ class MainActivityVenPrincipalDoc : AppCompatActivity() {
         setup(email ?:"", provider ?: "")
 
         /**Almacena UID**/
-        /*
-        val prefs: SharedPreferences.Editor? = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
+
+       /* val prefs: SharedPreferences.Editor? = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
         prefs?.putString("email", email)
         prefs?.putString("provider", user.toString())
         prefs?.apply()*/
-
-
 
         val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
         prefs.putString("email", email)
         prefs.putString("provider", provider)
         prefs.apply()
+
+        /*readData() {
+            Log.d("tipo", it.size.toString())
+        }*/
 
     }
 
@@ -89,13 +88,38 @@ class MainActivityVenPrincipalDoc : AppCompatActivity() {
     private fun datosPersonales(uid: String){
 
     db.collection("usuarios").document(uid).get().addOnSuccessListener {
-        txtNombreDoctor?.setText(it.get("nombres") as String?)
+        /*txtNombreDoctor?.setText(it.get("nombres") as String?)*/
     }
+        val user = FirebaseAuth.getInstance().uid
+        db.collection("usuarios").document(uid).get().addOnSuccessListener {
+            txtNombreDoctor?.setText(it.get("tipo") as String?)
+        }
+       //txtNombreDoctor?.setText(tipo) as String?
+
     }
 
     private fun showHome(){
         val homeIntent = Intent(this, AuthActivityDoc::class.java)
         startActivity(homeIntent)
     }
+
+    /*
+    fun readData(myCallback: (List<String>) -> Unit) {
+        val user = FirebaseAuth.getInstance().uid
+        db.collection("usuarios").document(user.toString()).get().addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val list = ArrayList<String>()
+                for (document in task.result) {
+                    val name = document.data["name"].toString()
+                    list.add(name)
+                }
+                myCallback(list)
+            }
+        }
+    }*/
+
+    /**Bloqueo de boton para regresar**/
+    override fun onBackPressed() {}
+
 
 }

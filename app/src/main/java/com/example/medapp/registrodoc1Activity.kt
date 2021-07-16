@@ -3,11 +3,14 @@ package com.example.medapp
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RadioButton
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthProvider
 import com.google.firebase.auth.FirebaseUser
@@ -30,6 +33,10 @@ class registrodoc1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrodoc)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = ContextCompat.getColor(this, R.color.registrocolor)
+        }
+
         supportActionBar!!.hide() ///esconde la barra de accion
 
         txtCI = findViewById(R.id.txtCI)
@@ -50,23 +57,30 @@ class registrodoc1Activity : AppCompatActivity() {
         val bundle: Bundle? = intent.extras;
         val email = bundle?.getString("email")
         val provider = bundle?.getString("provider")
+        val tipo = bundle?.getString("tipo")
 
         val cedula = txtCI?.text.toString()
         val nombres = txtNombres?.text.toString()
         val apellidos = txtApellidos?.text.toString()
 
-        val tipo = "M"
-
 
         btnRegistroDoc?.setOnClickListener {
-            db.collection("usuariosmed").document(txtCI?.text.toString()).set(
+            db.collection("usuariosmed").document(user.toString()).set(
                 hashMapOf(
+                    "cedula" to txtCI?.text.toString(),
                     "nombres" to txtNombres?.text.toString(),
                     "apellido" to txtApellidos?.text.toString(),
                     "correo" to email.toString(),
                     "tipo" to tipo)
             )
-            showHome()
+            if(tipo=="Paciente")
+            {
+                showHomePaciente()
+            }
+            if(tipo=="Doctor")
+            {
+                showHome()
+            }
         }
 
         val prefs: SharedPreferences.Editor? = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
@@ -81,7 +95,10 @@ class registrodoc1Activity : AppCompatActivity() {
         val homeIntent = Intent(this, MainActivityVenPrincipalDoc::class.java)
         startActivity(homeIntent)
     }
-
+    private fun showHomePaciente(){
+        val homeIntent = Intent(this, venMainPrincipalPacActivity::class.java)
+        startActivity(homeIntent)
+    }
 
 
 }

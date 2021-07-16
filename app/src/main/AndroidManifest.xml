@@ -10,26 +10,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen"/>
-        <activity android:name=".ProximasCitasMed" />
-        <activity android:name=".RegistroPacCita3" />
-        <activity android:name=".RegistroPacCitaDoc" />
-        <activity android:name=".RegistroCitaDoc" />
-        <activity android:name=".RegistroPacCita2" />
-        <activity android:name=".RegistroPacCita" />
-        <activity android:name=".ListaMedicosActivity" />
-        <activity android:name=".EncontrarMedicoActivity" />
-        <activity android:name=".venMainPrincipalPacActivity" />
-        <activity android:name=".registroInfoActivity" />
-        <activity android:name=".ContraActivity" />
-        <activity android:name=".Registrodoc3Activity" />
-        <activity android:name=".MainActivityVenPrincipalDoc"  />
-            <!-- android:theme="@style/SplashTheme"-->
-        <activity android:name=".AuthActivityPac" />
-        <activity android:name=".RegistroPacActivity1" />
-        <activity android:name=".Registrodoc2Activity" />
-        <activity android:name=".registrodoc1Activity" />
-        <activity android:name=".AuthActivityDoc">
+
+        <activity android:name=".ProximasCitasMed"  android:screenOrientation="portrait" />
+        <activity android:name=".RegistroPacCita3"  android:screenOrientation="portrait" />
+        <activity android:name=".RegistroPacCitaDoc"  android:screenOrientation="portrait" />
+        <activity android:name=".RegistroCitaDoc" android:screenOrientation="portrait" />
+        <activity android:name=".RegistroPacCita2"  android:screenOrientation="portrait" />
+        <activity android:name=".RegistroPacCita"  android:screenOrientation="portrait" />
+        <activity android:name=".ListaMedicosActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".EncontrarMedicoActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".venMainPrincipalPacActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".registroInfoActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".ContraActivity"  android:screenOrientation="portrait" />
+        <activity android:name=".Registrodoc3Activity"  android:screenOrientation="portrait" />
+        <activity android:name=".MainActivityVenPrincipalDoc"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".AuthActivityPac"  android:screenOrientation="portrait" />
+        <activity android:name=".RegistroPacActivity1"  android:screenOrientation="portrait" />
+        <activity android:name=".Registrodoc2Activity"  android:screenOrientation="portrait" />
+        <activity android:name=".registrodoc1Activity"  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AuthActivityDoc"
+            android:theme="@style/SplashTheme"  android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.INSERT" />

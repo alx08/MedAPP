@@ -1,17 +1,15 @@
 package com.example.medapp
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.auth.FirebaseAuth
-import android.os.Bundle
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Build
-import android.text.Layout
+import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -19,10 +17,10 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthCredential
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import java.security.Provider
 
 class AuthActivityDoc : AppCompatActivity() {
    // val IniciarSes : Button = findViewById(R.id.btnIniciarSesion)
@@ -30,6 +28,7 @@ class AuthActivityDoc : AppCompatActivity() {
     val db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth_doc)
         supportActionBar!!.hide()
@@ -55,7 +54,11 @@ class AuthActivityDoc : AppCompatActivity() {
             if (correo.text.isNotEmpty() &&  pass.text.isNotEmpty() ){
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(correo.text.toString(), pass.text.toString()).addOnCompleteListener{
                     if (it.isSuccessful){
-                        showHome(it.result?.user?.email ?:"", ProviderType.BASIC)
+                        if(valorEspecialdiad() == "Medico"){
+                            showHome(it.result?.user?.email ?:"", ProviderType.BASIC)}
+                        else{
+                            showHomePaciente(it.result?.user?.email ?:"", ProviderType.BASIC)
+                        }
                     } else{
                         ShowAlert()
                     }
@@ -96,7 +99,14 @@ class AuthActivityDoc : AppCompatActivity() {
             val credential : AuthCredential = GoogleAuthProvider.getCredential(account.idToken, null)
             FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener{
                 if(it.isSuccessful){
-                    showHome(account.email ?: "", ProviderType.GOOGLE)
+                    if (valorEspecialdiad() == "Medico")
+                    {
+                        showHome(account.email ?: "", ProviderType.GOOGLE)
+                    }
+                    else
+                    {
+                        showHomePaciente(account.email ?: "", ProviderType.GOOGLE)
+                    }
                 } else
                 {
                     ShowAlert()
@@ -119,13 +129,7 @@ class AuthActivityDoc : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun showHome(email: String, provider: ProviderType){
-        val homeIntent = Intent(this, MainActivityVenPrincipalDoc::class.java).apply {
-            putExtra("email",email)
-            putExtra("provider",provider.name)
-        }
-        startActivity(homeIntent)
-    }
+
 
     private fun session(){
         val authlayout: View? = findViewById(R.id.AuthDoc)
@@ -138,5 +142,42 @@ class AuthActivityDoc : AppCompatActivity() {
             showHome(email, ProviderType.valueOf(provider))
         }
 
+    }
+
+    private fun showHome(email: String, provider: ProviderType){
+        val homeIntent = Intent(this, MainActivityVenPrincipalDoc::class.java).apply {
+            putExtra("email",email)
+            putExtra("provider",provider.name)
+        }
+        startActivity(homeIntent)
+    }
+
+
+    private fun showHomePaciente(email: String, provider: ProviderType){
+        val homeIntent = Intent(this, venMainPrincipalPacActivity::class.java).apply {
+            putExtra("email",email)
+            putExtra("provider",provider.name)
+        }
+        startActivity(homeIntent)
+    }
+
+    private fun datosPersonales(uid: String){
+        var tipo: String? = null
+        db.collection("usuarios").document(uid).get().addOnSuccessListener {
+            tipo =  (it.get("tipo") as String?).toString()
+
+            val prefType = applicationContext.getSharedPreferences("type", MODE_PRIVATE).edit()
+            prefType.putString("tipo", tipo);  // Saving string
+            prefType.apply(); // commit changes
+
+        }
+    }
+
+    private fun valorEspecialdiad(): String{
+        val user = FirebaseAuth.getInstance().uid
+        datosPersonales(user.toString())
+        val pref: SharedPreferences = getSharedPreferences("type", MODE_PRIVATE)
+        val tipoEspecialidad: String = pref.getString("tipo", null).toString()
+        return  tipoEspecialidad
     }
 }
