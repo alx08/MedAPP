@@ -12,11 +12,7 @@ class Registrodoc2Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar!!.hide() ///esconde la barra de accion
         setContentView(R.layout.activity_registrodoc2)
-        val spinner = findViewById<View>(R.id.spnEspecialidad) as Spinner
-        val adapter = ArrayAdapter.createFromResource(this,
-                R.array.valores_especialiades, android.R.layout.simple_spinner_item)
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner.adapter = adapter
+
         btnSiguiente = findViewById<View>(R.id.btnRegistroDoc) as Button
         btnSiguiente!!.setOnClickListener {
             val inicio = Intent(this@Registrodoc2Activity, registroInfoActivity::class.java)
