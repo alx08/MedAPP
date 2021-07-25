@@ -20,7 +20,7 @@ class RegistroPacCita : AppCompatActivity() {
         setContentView(R.layout.activity_registro_cita)
         supportActionBar!!.hide() ///esconde la barra de accion
         titulo = findViewById(R.id.txtTitulo)
-        ubicacion = findViewById(R.id.txtUbicacion)
+        //ubicacion = findViewById(R.id.txtUbicacion)
         descripcion = findViewById(R.id.txtDescripcion)
         agregarEvento = findViewById(R.id.btnRegistroDoc)
         SelFecha = findViewById<View>(R.id.selFecha) as EditText

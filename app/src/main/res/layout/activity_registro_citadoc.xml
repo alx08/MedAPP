@@ -8,178 +8,55 @@
 
     <EditText
         android:id="@+id/selFecha2"
-        android:layout_width="360sp"
+        android:layout_width="320sp"
         android:layout_height="43sp"
-        android:layout_marginBottom="8dp"
         android:clickable="true"
         android:focusable="false"
         android:hint="Seleccione la Fecha"
         android:inputType="date"
         android:maxLines="1"
-        app:layout_constraintBottom_toTopOf="@+id/textView49"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView58" />
-
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="225dp"
-        android:layout_height="37dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Seleccione el horario"
-        android:textColor="@color/black_overlay"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selFecha2" />
-
-    <Button
-        android:id="@+id/btnSiguiente8"
-        android:layout_width="360dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="38dp"
-        android:background="@drawable/boton_interaccion"
-        android:fontFamily="sans-serif-light"
-        android:text="Regresar"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#C2185B"
-        android:textSize="25sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnRegistroDoc" />
+        tools:layout_editor_absoluteY="122dp" />
 
     <Button
         android:id="@+id/btnRegistroDoc"
-        android:layout_width="360dp"
-        android:layout_height="55sp"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="6dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Siguiente"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#CE0048FF"
-        android:textSize="25sp"
-        app:backgroundTint="@color/white"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSiguiente8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
     <Button
-        android:id="@+id/btnSiguiente12"
-        android:layout_width="67sp"
-        android:layout_height="44sp"
+        android:id="@+id/btnSiguiente8"
+        android:layout_width="300sp"
+        android:layout_height="40sp"
         android:layout_marginTop="29dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
-        android:text="Buscar"
+        android:text="Regresar"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#4CAF50"
-        android:textSize="14sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/selFecha2"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#F50057"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="360sp"
-        android:layout_height="306sp"
-        android:layout_marginStart="16sp"
-        android:layout_marginLeft="16sp"
-        android:layout_marginTop="32sp"
-        android:layout_marginEnd="16sp"
-        android:layout_marginRight="16sp"
-        android:layout_marginBottom="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSiguiente9"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView49"
-        tools:ignore="UnknownIdInLayout">
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/boton_interaccion"
-            android:checked="false"
-            android:fontFamily="sans-serif-light"
-            android:text="08:00 - 08:30"
-            android:textColor="@color/black_overlay"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/boton_interaccion"
-            android:fontFamily="sans-serif-light"
-            android:text="09:00 - 09:30"
-            android:textColor="@color/black_overlay"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white" />
-
-        <RadioButton
-            android:id="@+id/radioButton7"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/boton_interaccion"
-            android:fontFamily="sans-serif-light"
-            android:text="11:00 - 11:30"
-            android:textColor="@color/black_overlay"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white" />
-
-        <RadioButton
-            android:id="@+id/radioButton11"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/boton_interaccion"
-            android:fontFamily="sans-serif-light"
-            android:text="13:00 - 13:30"
-            android:textColor="@color/black_overlay"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white" />
-
-        <RadioButton
-            android:id="@+id/radioButton12"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/boton_interaccion"
-            android:fontFamily="sans-serif-light"
-            android:text="14:00 - 14:30"
-            android:textColor="@color/black_overlay"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white" />
-
-        <RadioButton
-            android:id="@+id/radioButton13"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/boton_interaccion"
-            android:fontFamily="sans-serif-light"
-            android:text="16:00 - 16:30"
-            android:textColor="@color/black_overlay"
-            android:textSize="24sp"
-            app:backgroundTint="@color/white" />
-    </RadioGroup>
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistroDoc" />
 
     <TextView
         android:id="@+id/textView35"
@@ -187,35 +64,167 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="86dp"
         android:text="Su cita se agendará en el horario seleccionado"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        tools:layout_editor_absoluteY="561dp" />
 
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="280sp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
-        android:ems="10"
-        android:hint="Identificación"
-        android:inputType="number"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView58"
-        app:layout_constraintEnd_toStartOf="@+id/btnSiguiente12"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="320sp"
+        android:layout_height="306sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView49"
+        tools:ignore="UnknownIdInLayout">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_interaccion"
+            android:checked="false"
+            android:fontFamily="sans-serif-light"
+            android:text="08:00 - 08:30"
+            android:textColor="@color/black_overlay"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_interaccion"
+            android:fontFamily="sans-serif-light"
+            android:text="09:00 - 09:30"
+            android:textColor="@color/black_overlay"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_interaccion"
+            android:fontFamily="sans-serif-light"
+            android:text="11:00 - 11:30"
+            android:textColor="@color/black_overlay"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_interaccion"
+            android:fontFamily="sans-serif-light"
+            android:text="13:00 - 13:30"
+            android:textColor="@color/black_overlay"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_interaccion"
+            android:fontFamily="sans-serif-light"
+            android:text="14:00 - 14:30"
+            android:textColor="@color/black_overlay"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_interaccion"
+            android:fontFamily="sans-serif-light"
+            android:text="16:00 - 16:30"
+            android:textColor="@color/black_overlay"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="153sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Seleccione el horario"
+        android:textColor="@color/black_overlay"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selFecha2" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/selFecha2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/botonbuscar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/selFecha2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCI"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="Cédula"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView58"
@@ -227,6 +236,6 @@
         app:layout_constraintBottom_toTopOf="@+id/selFecha2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

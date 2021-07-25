@@ -7,48 +7,131 @@
     tools:context=".venMainPrincipalPacActivity">
 
     <Button
+        android:id="@+id/btnRealizarCita"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Realizar una Cita"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Médicos de Confianza"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Administrar Citas"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRealizarCita" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Farmacias Cercanas"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Pagos Pendientes"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
         android:id="@+id/btnCerrarSesion"
-        android:layout_width="97sp"
-        android:layout_height="21sp"
-        android:layout_marginStart="280dp"
-        android:layout_marginLeft="280dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="132dp"
-        android:background="@drawable/boton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Cerrar Sesión"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#D50000"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="16sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/cardView5"
+        app:backgroundTint="#F50057"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombrePaciente"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Calendario"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/btnPersonalizar3"
-        android:layout_width="129sp"
-        android:layout_height="24sp"
-        android:background="@drawable/boton"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/texteditdesign"
         android:fontFamily="sans-serif-light"
         android:text="Personalizar Perfil"
-
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#FF0000"
-        android:textSize="16sp"
+        android:textColor="#F50057"
+        android:textSize="14sp"
         android:typeface="sans"
-        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/textView37"
@@ -57,14 +140,15 @@
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Bienvenido"
-        android:textColor="@color/logincolor"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtNombrePaciente"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.843"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtNombrePaciente"
@@ -72,118 +156,26 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:text="nombrePaciente"
-        android:textColor="@color/logincolor"
+        android:textColor="@color/colorPrimary"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintHorizontal_bias="0.832"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView4"
-        android:layout_width="320sp"
-        android:layout_height="389sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="64dp"
-        app:cardCornerRadius="10sp"
-        app:cardElevation="6sp"
-        app:cardPreventCornerOverlap="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView5">
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:background="@drawable/round"
-            android:fontFamily="sans-serif-light"
-            android:text="Calendario"
-            android:textColor="#FFFFFF"
-            android:translationX="20sp"
-            android:translationY="140sp"
-            app:backgroundTint="@color/logincolor" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:background="@drawable/round"
-            android:fontFamily="sans-serif-light"
-            android:text="Administrar Citas"
-            android:textColor="#FFFFFF"
-            android:translationX="200sp"
-            android:translationY="20sp"
-            app:backgroundTint="@color/logincolor" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:background="@drawable/round"
-            android:fontFamily="sans-serif-light"
-            android:text="Médicos de Confianza"
-            android:textColor="#FFFFFF"
-            android:translationX="200sp"
-            android:translationY="140sp"
-            app:backgroundTint="@color/logincolor" />
-
-        <Button
-            android:id="@+id/btnRealizarCita"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:background="@drawable/round"
-            android:fontFamily="sans-serif-light"
-            android:text="Realizar una Cita"
-            android:textColor="#FFFFFF"
-            android:translationX="20sp"
-            android:translationY="20sp"
-            app:backgroundTint="@color/logincolor" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:background="@drawable/round"
-            android:fontFamily="sans-serif-light"
-            android:text="Farmacias Cercanas"
-            android:textColor="#FFFFFF"
-            android:translationX="20sp"
-            android:translationY="260sp"
-            app:backgroundTint="@color/logincolor" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="100sp"
-            android:layout_height="100sp"
-            android:background="@drawable/round"
-            android:fontFamily="sans-serif-light"
-            android:text="Pagos Pendientes"
-            android:textColor="#FFFFFF"
-            android:translationX="200sp"
-            android:translationY="260sp"
-            app:backgroundTint="@color/logincolor" />
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintVertical_bias="0.049" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView5"
-        android:layout_width="320sp"
+        android:layout_width="300dp"
         android:layout_height="95sp"
         android:layout_marginStart="37sp"
         android:layout_marginLeft="37sp"
         android:layout_marginTop="13sp"
         android:layout_marginEnd="37sp"
         android:layout_marginRight="37sp"
-        android:layout_marginBottom="16dp"
-        app:cardCornerRadius="10sp"
-        app:cardElevation="6sp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView4"
+        app:cardCornerRadius="2sp"
+        app:cardElevation="3sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView52">
@@ -216,10 +208,12 @@
             android:id="@+id/button7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/round"
+            android:background="@drawable/boton_interaccion"
+            android:fontFamily="sans-serif-light"
             android:text="Ingresar"
-            android:translationX="200sp"
-            android:translationY="21sp" />
+            android:textAllCaps="false"
+            android:translationX="200dp"
+            android:translationY="21dp" />
 
         <TextView
             android:id="@+id/textView56"
@@ -236,7 +230,7 @@
         android:layout_height="21dp"
         android:layout_marginStart="37dp"
         android:layout_marginLeft="37dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="295dp"
         android:layout_marginRight="295dp"
         android:text="Próxima cita"

@@ -8,7 +8,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
-        android:layout_width="380dp"
+        android:layout_width="300dp"
         android:layout_height="154dp"
         android:layout_marginTop="8dp"
         app:cardCornerRadius="10sp"
@@ -22,7 +22,7 @@
             android:id="@+id/imageView2"
             android:layout_width="176dp"
             android:layout_height="match_parent"
-            android:translationX="215sp"
+            android:translationX="140sp"
             app:srcCompat="@drawable/kisspng_computer_icons_google_account_user_profile_iconfin_png_icons_download_profile_5ab0301e32cb90_1777380215214960942081"
             tools:srcCompat="@drawable/kisspng_computer_icons_google_account_user_profile_iconfin_png_icons_download_profile_5ab0301e32cb90_1777380215214960942081" />
 
@@ -52,7 +52,7 @@
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,62 +69,46 @@
         android:text="Datos Profesionales"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.198"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.091" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="175dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginRight="220dp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Especialidad"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="@color/black_overlay"
-        android:textSize="24sp"
-        android:translationY="180sp"
-        android:typeface="sans"
-        app:layout_constraintBottom_toTopOf="@+id/spEspecialidades"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.307"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
-
-    <Spinner
-        android:id="@+id/spEspecialidades"
-        android:layout_width="370dp"
-        android:layout_height="46dp"
-        android:layout_marginBottom="396dp"
-        android:background="@drawable/round"
-        android:scrollbarSize="8dp"
-        android:textColor="@color/black_overlay"
-        android:translationY="180sp"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnEspecialidad"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="350dp"
+        android:hint="Especialidad"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnRegistroDoc"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Siguiente"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#CE0048FF"
-        android:textSize="25sp"
-        app:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/registrocolor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
@@ -134,52 +118,56 @@
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
+        android:layout_width="68dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
         android:text="Nombre:"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView25"
         app:layout_constraintEnd_toStartOf="@+id/textView27"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView6"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="183dp"
-        android:layout_marginRight="183dp"
+        android:layout_width="39dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
         android:text="C.I:"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        tools:layout_editor_absoluteY="296dp" />
 
     <TextView
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="18dp"
         android:fontFamily="sans-serif-light"
         android:text="NombreMedico"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView29"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.751"
         app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toBottomOf="@+id/cardView6" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="102dp"
+        android:layout_height="22dp"
         android:fontFamily="sans-serif-light"
         android:text="CedulaMedico"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/spEspecialidades"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/spnEspecialidad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView25"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />

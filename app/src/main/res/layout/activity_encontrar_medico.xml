@@ -6,55 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".EncontrarMedicoActivity">
 
-    <Spinner
-        android:id="@+id/spEspecialidades2"
-        android:layout_width="0dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        android:layout_marginBottom="396dp"
-        android:background="@drawable/round"
-        android:scrollbarSize="8dp"
-        android:textColor="@color/black_overlay"
-        android:translationY="180sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        tools:ignore="MissingConstraints,UnknownIdInLayout" />
-
     <Button
         android:id="@+id/btnBuscar"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="572dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Buscar"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#303F9F"
+        android:textColor="@color/white"
         android:textSize="25sp"
-        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.98" />
+        app:layout_constraintTop_toBottomOf="@+id/menu" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:fontFamily="sans-serif-thin"
-        android:text="Seleccione especialidad"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/spEspecialidades2"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:hint="Especialidad deseada"
+        app:layout_constraintBottom_toTopOf="@+id/btnBuscar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.157">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

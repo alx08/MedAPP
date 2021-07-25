@@ -8,58 +8,38 @@
 
     <Button
         android:id="@+id/btnRegistroDoc"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Siguiente"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#CE0048FF"
-        android:textSize="25sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979" />
+        tools:layout_editor_absoluteY="753dp" />
 
-    <Spinner
-        android:id="@+id/spProvincias"
-        android:layout_width="370dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/round"
-        android:textColor="@color/black_overlay"
-        android:translationY="-10sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnProvincia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:hint="Provincia"
+        app:layout_constraintBottom_toTopOf="@+id/spnEspecialidad"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="303dp"
-        android:layout_marginRight="303dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Provincia"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textSize="20sp"
-        android:translationY="-10sp"
-        app:layout_constraintBottom_toTopOf="@+id/spProvincias"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView19"
@@ -69,16 +49,15 @@
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="112dp"
         android:layout_marginRight="112dp"
-        android:layout_marginBottom="51dp"
         android:fontFamily="sans-serif-medium"
         android:text="Ubicación de Consultorio"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:typeface="sans"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintBottom_toTopOf="@+id/spnProvincia"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
@@ -86,135 +65,82 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="9dp"
         android:fontFamily="sans-serif-light"
         android:lineSpacingExtra="8sp"
         android:text="Médico"
         android:textAllCaps="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:typeface="sans"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/spProvincias2"
-        android:layout_width="370dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
-        android:layout_marginBottom="19dp"
-        android:background="@drawable/round"
-        android:textColor="@color/black_overlay"
-        android:translationY="-10sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView21"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnParroquia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:hint="Parroquia"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/spnEspecialidad">
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnEspecialidad"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:hint="Especialidad deseada"
+        app:layout_constraintBottom_toTopOf="@+id/spnParroquia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnProvincia">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginRight="300dp"
-        android:layout_marginBottom="1dp"
-        android:fontFamily="sans-serif-light"
-        android:lineSpacingExtra="20sp"
-        android:text="Parroquia"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textSize="22sp"
-        android:translationY="-10sp"
-        app:layout_constraintBottom_toTopOf="@+id/spProvincias2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spProvincias3" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="379dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="63dp"
-        android:background="@drawable/round"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingStart="8dp"
-        android:paddingLeft="8dp"
-        android:text=""
-        android:textColor="@color/black_overlay"
-        android:translationY="-10sp"
+        android:layout_marginBottom="363dp"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/spnParroquia">
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="304dp"
-        android:layout_marginRight="304dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Dirección"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textSize="20sp"
-        android:translationY="-10sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spProvincias2" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="text"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <Spinner
-        android:id="@+id/spProvincias3"
-        android:layout_width="370dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/round"
-        android:textColor="@color/black_overlay"
-        android:translationY="-10sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView11"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="325dp"
-        android:layout_marginRight="325dp"
-        android:fontFamily="sans-serif-light"
-        android:text="Cantón"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textSize="20sp"
-        android:translationY="-10sp"
-        app:layout_constraintBottom_toTopOf="@+id/spProvincias3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spProvincias" />
 </androidx.constraintlayout.widget.ConstraintLayout>

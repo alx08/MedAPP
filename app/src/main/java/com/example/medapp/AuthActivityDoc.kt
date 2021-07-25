@@ -34,7 +34,7 @@ class AuthActivityDoc : AppCompatActivity() {
         setContentView(R.layout.activity_auth_doc)
         supportActionBar!!.hide()
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            window.statusBarColor = ContextCompat.getColor(this, R.color.logincolor)
+            window.statusBarColor = ContextCompat.getColor(this, R.color.statusBarColor)
         }
 
 
@@ -131,7 +131,7 @@ class AuthActivityDoc : AppCompatActivity() {
     }
 
 
-
+    /**Validar si hay sesion activa**/
     private fun session(){
         val authlayout: View? = findViewById(R.id.AuthDoc)
         val prefs: SharedPreferences = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
@@ -174,15 +174,6 @@ class AuthActivityDoc : AppCompatActivity() {
 
     private fun datosPersonales(uid: String){
         var tipo: String? = null
-        /*db.collection("usuarios").document(uid).get().addOnSuccessListener {
-            tipo =  (it.get("tipo") as String?).toString()
-
-            val prefType = applicationContext.getSharedPreferences("type", MODE_PRIVATE).edit()
-            prefType.putString("tipo", tipo);  // Saving string
-            prefType.apply(); // commit changes
-
-        }*/
-
         val docRef = db.collection("usuarios").document(uid)
         docRef.addSnapshotListener { snapshot, e ->
             if (e != null) {

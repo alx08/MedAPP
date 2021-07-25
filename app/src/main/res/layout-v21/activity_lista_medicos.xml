@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListaMedicosActivity"
+    >
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/boton_interaccion"
+        android:fontFamily="sans-serif-light"
+        android:text="Regresar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/white"
+        app:backgroundTint="#F50057"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView54" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView54"
+        android:layout_width="313dp"
+        android:layout_height="451dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            style="@android:style/Widget.Material.Light.ScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:layout_marginBottom="32dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/cardView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:elevation="5sp"
+
+                    app:cardCornerRadius="2sp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/textViewTAP"
+                        android:layout_width="147dp"
+                        android:layout_height="64dp"
+                        android:text="NombreDoctor"
+                        android:textSize="16sp"
+                        android:translationX="20sp"
+                        android:translationY="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalAhorroPro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinero$"
+                        android:textSize="20sp"
+                        android:translationX="200sp"
+                        android:translationY="30sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dólares"
+                        android:translationX="200sp"
+                        android:translationY="10sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView6"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:elevation="5sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2sp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/textViewTC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NombreDoctor"
+                        android:textSize="16sp"
+                        android:translationX="20sp"
+                        android:translationY="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalCredito"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinero$"
+                        android:textSize="20sp"
+                        android:translationX="200sp"
+                        android:translationY="30sp" />
+
+                    <TextView
+                        android:id="@+id/textViewdola"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dólares"
+                        android:translationX="200sp"
+                        android:translationY="10sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:elevation="5sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2sp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/textViewTA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NombreDoctor"
+                        android:textSize="16sp"
+                        android:translationX="20sp"
+                        android:translationY="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalAportacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinero$"
+                        android:textSize="20sp"
+                        android:translationX="200sp"
+                        android:translationY="30sp" />
+
+                    <TextView
+                        android:id="@+id/textViewD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dólares"
+                        android:translationX="200sp"
+                        android:translationY="10sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:elevation="5sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2sp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/txtToA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NombreDoctor"
+                        android:textSize="16sp"
+                        android:translationX="20sp"
+                        android:translationY="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalAhorro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinero$"
+                        android:textSize="20sp"
+                        android:translationX="200sp"
+                        android:translationY="30sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dólares"
+                        android:translationX="200sp"
+                        android:translationY="10sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView7"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:elevation="5sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3sp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/textViewTCR"
+                        android:layout_width="141dp"
+                        android:layout_height="wrap_content"
+                        android:text="NombreDoctoro"
+                        android:textSize="16sp"
+                        android:translationX="20sp"
+                        android:translationY="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalCreditoRot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinero$"
+                        android:textSize="20sp"
+                        android:translationX="200sp"
+                        android:translationY="30sp" />
+
+                    <TextView
+                        android:id="@+id/textViewdolae"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dólares"
+                        android:translationX="200sp"
+                        android:translationY="10sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView8"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:elevation="5sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2sp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="115dp"
+                        android:layout_height="50dp"
+                        android:text="NombreDoctor"
+                        android:textSize="16sp"
+                        android:translationX="20sp"
+                        android:translationY="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtCuentaxCobrar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinero$"
+                        android:textSize="20sp"
+                        android:translationX="200sp"
+                        android:translationY="30sp" />
+
+                    <TextView
+                        android:id="@+id/textViewdol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dólares"
+                        android:translationX="200sp"
+                        android:translationY="10sp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="290dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:elevation="5sp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="2sp"
+                    app:cardElevation="5sp">
+
+                    <TextView
+                        android:id="@+id/textViewTPF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NombreDoctor"
+                        android:textSize="16sp"
+                        android:translationX="20sp"
+                        android:translationY="10sp" />
+
+                    <TextView
+                        android:id="@+id/txtTotalPlazoFijo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinero$"
+                        android:textSize="20sp"
+                        android:translationX="200sp"
+                        android:translationY="30sp" />
+
+                    <TextView
+                        android:id="@+id/textViewDine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dólares"
+                        android:translationX="200sp"
+                        android:translationY="10sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Seleccionar el doctor de su preferencia: "
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView54"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

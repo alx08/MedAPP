@@ -8,35 +8,32 @@
 
     <Button
         android:id="@+id/btnSiguiente6"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Siguiente"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#CE0048FF"
-        android:textSize="25sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/btnSiguiente7"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Button
-        android:id="@+id/btnSiguiente7"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
+        android:id="@+id/btnRegresar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="45dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Regresar"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#C2185B"
-        android:textSize="25sp"
-        app:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="#F50057"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,17 +44,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seleccione un horario"
-        android:textSize="30sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="397dp"
-        android:layout_height="600dp"
+        android:layout_width="296dp"
+        android:layout_height="452dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
@@ -71,90 +68,90 @@
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:checked="false"
             android:fontFamily="sans-serif-light"
             android:text="08:00 - 08:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="09:00 - 09:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="10:00 - 10:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton7"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="11:00 - 11:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton9"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="12:00 - 12:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton11"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="13:00 - 13:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton12"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="14:00 - 14:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
 
         <RadioButton
             android:id="@+id/radioButton13"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
             android:fontFamily="sans-serif-light"
             android:text="16:00 - 16:30"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:backgroundTint="@color/white" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

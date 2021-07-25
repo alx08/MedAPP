@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.datepicker.MaterialDatePicker
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -18,25 +19,22 @@ class RegistroCitaDoc : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro_citadoc)
         supportActionBar!!.hide() ///esconde la barra de accion
-        btnSiguiente = findViewById<View>(R.id.btnRegistroDoc) as Button
-        btnSiguiente!!.setOnClickListener {
-            val inicio = Intent(this@RegistroCitaDoc, RegistroPacCita::class.java)
+        btnSiguiente = findViewById(R.id.btnRegistroDoc)
+
+        btnSiguiente?.setOnClickListener {
+            val inicio = Intent(this@RegistroCitaDoc, RegistroPacCitaDoc::class.java)
             startActivity(inicio)
         }
-        SelFecha2 = findViewById<View>(R.id.selFecha2) as EditText
-        SelFecha2 = findViewById(R.id.selFecha2)
-        val date = OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
-            calendario[Calendar.YEAR] = year
-            calendario[Calendar.MONTH] = monthOfYear
-            calendario[Calendar.DAY_OF_MONTH] = dayOfMonth
-            actualizarInput()
-        }
+
         //selFecha2.setOnClickListener(View.OnClickListener { DatePickerDialog(this@RegistroCitaDoc, date, calendario[Calendar.YEAR], calendario[Calendar.MONTH], calendario[Calendar.DAY_OF_MONTH]).show() })
+        val datePicker =
+            MaterialDatePicker.Builder.datePicker()
+                .setTitleText("Select date")
+                .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
+                .build()
+        datePicker.show(supportFragmentManager, datePicker.toString())
+
     }
 
-    private fun actualizarInput() {
-        val formatoDeFecha = "MM/dd/yy" //
-        val sdf = SimpleDateFormat(formatoDeFecha, Locale.US)
-        SelFecha2!!.setText(sdf.format(calendario.time))
-    }
+
 }

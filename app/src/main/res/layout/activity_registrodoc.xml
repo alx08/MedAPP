@@ -42,8 +42,8 @@
 
     <Button
         android:id="@+id/btnRegistroDoc"
-        android:layout_width="320sp"
-        android:layout_height="40sp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Registrar"
@@ -59,78 +59,100 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.979" />
 
-    <EditText
-        android:id="@+id/txtCorreo"
-        android:layout_width="320sp"
-        android:layout_height="46sp"
-        android:layout_marginBottom="328dp"
-        android:ems="10"
-        android:hint="Correo"
-        android:inputType="textEmailAddress"
-        android:paddingStart="8dp"
-        android:paddingLeft="8dp"
-        android:textColor="@color/black_overlay"
-        android:textSize="16sp"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="304dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789"
+            android:hint="Cédula"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtApellidos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            android:inputType="text"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="134dp"
         app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtApellidos" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
 
-    <EditText
-        android:id="@+id/txtCI"
-        android:layout_width="320sp"
-        android:layout_height="42dp"
-        android:layout_marginTop="26dp"
-        android:ems="10"
-        android:hint="Cédula"
-        android:inputType="number"
-        android:paddingStart="8dp"
-        android:paddingLeft="8dp"
-        android:textColor="@color/black_overlay"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtNombres"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/txtNombres"
-        android:layout_width="320sp"
-        android:layout_height="46sp"
-        android:layout_marginBottom="1dp"
-        android:ems="10"
-        android:hint="Nombres"
-        android:inputType="textPersonName"
-        android:paddingStart="8dp"
-        android:paddingLeft="8dp"
-        android:text=""
-        android:textColor="@color/black_overlay"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtApellidos"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCI" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
 
-    <EditText
-        android:id="@+id/txtApellidos"
-        android:layout_width="320sp"
-        android:layout_height="46sp"
-        android:ems="10"
-        android:hint="Apellidos"
-        android:inputType="textPersonName"
-        android:paddingStart="8dp"
-        android:paddingLeft="8dp"
-        android:text=""
-        android:textColor="@color/black_overlay"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtCorreo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombres"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombres"
+            android:inputType="text"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
