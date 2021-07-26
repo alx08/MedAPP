@@ -57,7 +57,6 @@
         android:layout_height="452dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         app:layout_constraintBottom_toTopOf="@+id/btnSiguiente6"
@@ -75,7 +74,8 @@
             android:fontFamily="sans-serif-light"
             android:text="08:00 - 08:30"
             android:textSize="16sp"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/white"
+            app:buttonTint="@color/colorPrimary" />
 
         <RadioButton
             android:id="@+id/radioButton3"

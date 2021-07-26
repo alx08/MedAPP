@@ -130,12 +130,13 @@
             android:layout_height="1sp"
             android:layout_weight="1"
             android:background="@drawable/boton_interaccion"
-            android:checked="false"
+            android:checked="true"
             android:fontFamily="sans-serif-light"
             android:text="Médico"
             android:textColor="@color/black_overlay"
             android:textSize="16sp"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/white"
+            app:buttonTint="@color/colorPrimaryDark" />
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -161,7 +162,7 @@
         android:text="Registrar"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:backgroundTint="@color/registrocolor"
         app:layout_constraintBottom_toTopOf="@+id/btnGoogle"
         app:layout_constraintEnd_toEndOf="parent"

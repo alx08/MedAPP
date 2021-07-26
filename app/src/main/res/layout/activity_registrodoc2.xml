@@ -6,15 +6,134 @@
     android:layout_height="match_parent"
     tools:context=".Registrodoc2Activity">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnParroquia">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="text"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnParroquia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:hint="Parroquia"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnEspecialidad">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnCiudad"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Ciudad"
+        app:layout_constraintBottom_toTopOf="@+id/spnParroquia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnProvincia">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spnProvincia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:hint="Provincia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ubicación de Consultorio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/black_overlay"
+        android:textSize="16sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/spnProvincia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView6"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="154dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         app:cardCornerRadius="10sp"
         app:cardElevation="4sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15">
 
@@ -22,7 +141,7 @@
             android:id="@+id/imageView2"
             android:layout_width="176dp"
             android:layout_height="match_parent"
-            android:translationX="140sp"
+            android:translationX="165sp"
             app:srcCompat="@drawable/kisspng_computer_icons_google_account_user_profile_iconfin_png_icons_download_profile_5ab0301e32cb90_1777380215214960942081"
             tools:srcCompat="@drawable/kisspng_computer_icons_google_account_user_profile_iconfin_png_icons_download_profile_5ab0301e32cb90_1777380215214960942081" />
 
@@ -36,16 +155,21 @@
             android:text="Actualizar foto"
             android:textAppearance="@style/TextAppearance.AppCompat.Display4"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:translationY="55sp"
             android:typeface="sans"
-            app:backgroundTint="#CE0048FF" />
+            app:backgroundTint="@color/colorPrimaryDark" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:fontFamily="sans-serif-light"
         android:lineSpacingExtra="8sp"
         android:text="Médico"
@@ -55,41 +179,47 @@
         android:textSize="16sp"
         android:textStyle="bold"
         android:typeface="sans"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="1dp"
         android:fontFamily="sans-serif-light"
         android:text="Datos Profesionales"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="@color/black_overlay"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/spnEspecialidad"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="61dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="350dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="8dp"
         android:hint="Especialidad"
-        app:layout_constraintBottom_toTopOf="@+id/btnRegistroDoc"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29">
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
 
         <AutoCompleteTextView
             android:layout_width="match_parent"
@@ -102,6 +232,8 @@
         android:id="@+id/btnRegistroDoc"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Siguiente"
@@ -111,10 +243,9 @@
         app:backgroundTint="@color/registrocolor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
 
     <TextView
         android:id="@+id/textView24"
@@ -152,7 +283,7 @@
         android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="21dp"
         android:fontFamily="sans-serif-light"
         android:text="NombreMedico"
         android:textSize="16sp"
@@ -166,6 +297,7 @@
         android:id="@+id/textView29"
         android:layout_width="102dp"
         android:layout_height="22dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="sans-serif-light"
         android:text="CedulaMedico"
         android:textSize="16sp"

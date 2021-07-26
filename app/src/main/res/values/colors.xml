@@ -13,5 +13,5 @@
     <color name="black_overlay">#66000000</color>
     <color name="statusBarColor">#FFFFFF</color>
     <color name="logincolor">#273b7a</color>
-    <color name="registrocolor">#1069e4</color>
+    <color name="registrocolor">@color/colorPrimaryDark</color>
 </resources>

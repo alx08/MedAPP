@@ -24,29 +24,7 @@ class RegistroPacCita : AppCompatActivity() {
         descripcion = findViewById(R.id.txtDescripcion)
         agregarEvento = findViewById(R.id.btnRegistroDoc)
         SelFecha = findViewById<View>(R.id.selFecha) as EditText
-        //SelFecha = findViewById(R.id.selFecha)
-       /* val date = OnDateSetListener { view, year, monthOfYear, dayOfMonth ->
-            calendario[Calendar.YEAR] = year
-            calendario[Calendar.MONTH] = monthOfYear
-            calendario[Calendar.DAY_OF_MONTH] = dayOfMonth
-            actualizarInput()
-        }*/
-        /*-SelFecha.setOnClickListener(View.OnClickListener { DatePickerDialog(this@RegistroPacCita, date, calendario[Calendar.YEAR], calendario[Calendar.MONTH], calendario[Calendar.DAY_OF_MONTH]).show() })
-        agregarEvento.setOnClickListener(View.OnClickListener {
-            if (!titulo.getText().toString().isEmpty() && !ubicacion.getText().toString().isEmpty() && !descripcion.getText().toString().isEmpty()) {
-                val intent = Intent(Intent.ACTION_INSERT)
-                        .setData(CalendarContract.Events.CONTENT_URI)
-                        .putExtra(CalendarContract.Events.TITLE, titulo.getText().toString())
-                        .putExtra(CalendarContract.Events.EVENT_LOCATION, ubicacion.getText().toString())
-                if (intent.resolveActivity(packageManager) != null) {
-                    startActivity(intent)
-                } else {
-                    Toast.makeText(this@RegistroPacCita, "No hay app que pueda soportar", Toast.LENGTH_SHORT).show()
-                }
-            } else {
-                Toast.makeText(this@RegistroPacCita, "Por favor llene todos los campos", Toast.LENGTH_SHORT).show()
-            }
-        })*/
+
     }
 
     private fun actualizarInput() {

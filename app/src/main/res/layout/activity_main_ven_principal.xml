@@ -10,7 +10,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView5"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="90dp"
         android:layout_marginStart="37dp"
         android:layout_marginLeft="37dp"
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="TemaPrincipal"
             android:translationX="10sp"
-            android:translationY="8sp" />
+            android:translationY="5sp" />
 
         <TextView
             android:id="@+id/textView54"
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:text="NombrePaciente"
             android:translationX="10sp"
-            android:translationY="27sp" />
+            android:translationY="24sp" />
 
         <TextView
             android:id="@+id/textView55"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:text="FechaConsulta"
             android:translationX="10sp"
-            android:translationY="45sp" />
+            android:translationY="42sp" />
 
         <Button
             android:id="@+id/button7"
@@ -58,8 +58,8 @@
             android:fontFamily="sans-serif-light"
             android:text="Ingresar"
             android:textAllCaps="false"
-            android:translationX="200dp"
-            android:translationY="21dp" />
+            android:translationX="190dp"
+            android:translationY="22dp" />
 
         <TextView
             android:id="@+id/textView56"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:text="HoraConsulta"
             android:translationX="10sp"
-            android:translationY="63sp" />
+            android:translationY="60sp" />
     </androidx.cardview.widget.CardView>
 
     <Button
@@ -94,16 +94,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
         android:text="especialidadDoctor"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black_overlay"
         android:textSize="16sp"
         android:textStyle="bold"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintHorizontal_bias="0.894"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintVertical_bias="0.073" />
 
     <TextView
         android:id="@+id/txtNombreDoctor"
@@ -111,11 +111,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-light"
         android:text="nombreDoctor"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black_overlay"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintHorizontal_bias="0.907"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.047" />
@@ -126,19 +126,19 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-thin"
         android:text="Bienvenido"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black_overlay"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.013" />
 
     <Button
         android:id="@+id/CrearCita"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
         android:layout_marginLeft="26dp"
@@ -161,7 +161,7 @@
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
         android:layout_marginLeft="26dp"
@@ -181,7 +181,7 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
         android:layout_marginLeft="26dp"
@@ -202,23 +202,23 @@
         android:id="@+id/btnPersonalizar"
         android:layout_width="128dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/texteditdesign"
+        android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Personalizar Perfil"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
-        android:textColor="#DFC2185B"
+        android:textColor="@color/white"
         android:textSize="16sp"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.014" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
         android:layout_marginLeft="26dp"

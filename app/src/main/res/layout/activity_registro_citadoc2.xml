@@ -10,9 +10,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout4"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,7 +25,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtTitulo"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Motivo de consulta"
             android:inputType="text"
@@ -33,9 +37,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout5"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toTopOf="@+id/textView50"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +53,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtDescripcion"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Detalles de consulta"
             android:inputType="text"
@@ -57,8 +65,12 @@
 
     <EditText
         android:id="@+id/selFecha"
-        android:layout_width="300dp"
-        android:layout_height="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="75dp"
         android:clickable="true"
         android:focusable="false"
@@ -72,18 +84,20 @@
 
     <TextView
         android:id="@+id/textView50"
-        android:layout_width="245sp"
+        android:layout_width="match_parent"
         android:layout_height="21dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="18dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-light"
         android:text="Verifique la fecha"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/selFecha"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
 
@@ -104,9 +118,13 @@
 
     <Button
         android:id="@+id/btnSiguiente5"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
@@ -123,9 +141,13 @@
 
     <Button
         android:id="@+id/btnRegistroDoc"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
         android:background="@drawable/boton_interaccion"
         android:fontFamily="sans-serif-light"
         android:text="Siguiente"
@@ -142,6 +164,10 @@
         android:id="@+id/animationView"
         android:layout_width="304dp"
         android:layout_height="222dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"

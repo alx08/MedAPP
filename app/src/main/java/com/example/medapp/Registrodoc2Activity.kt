@@ -15,7 +15,7 @@ class Registrodoc2Activity : AppCompatActivity() {
 
         btnSiguiente = findViewById<View>(R.id.btnRegistroDoc) as Button
         btnSiguiente!!.setOnClickListener {
-            val inicio = Intent(this@Registrodoc2Activity, registroInfoActivity::class.java)
+            val inicio = Intent(this@Registrodoc2Activity, Registrodoc3Activity::class.java)
             startActivity(inicio)
         }
     }
